@@ -1,0 +1,21 @@
+<div class="game-container">
+  <h1>Typing Game</h1>
+  <div class="game-info">
+    <p>Points: {{ point }}</p>
+    <p>Time Remaining: {{ timer }} seconds</p>
+    <p>Word: {{ words }}</p>
+  </div>
+  <div class="game-input">
+    <input type="text" [(ngModel)]="inputValue" (input)="onInput($event)" placeholder="Type the word here..." />
+    <button (click)="startGame()">Start Game</button>
+  </div>
+  <div class="keyboard">
+    <div class="keyboard-row" *ngFor="let row of buttons">
+      <button *ngFor="let key of row.top || row.middle || row.bottom" (click)="onButtonClick(key)">
+        {{ key }}
+      </button>
+    </div>
+  </div>
+</div>
+
+

@@ -1,0 +1,61 @@
+/* app.component.css */
+
+.game-container {
+  max-width: 600px;
+  margin: 0 auto;
+  text-align: center;
+  font-family: Arial, sans-serif;
+  padding: 20px;
+  border: 2px solid #000;
+  border-radius: 10px;
+  background-color: #f9f9f9;
+}
+
+h1 {
+  font-size: 2em;
+  margin-bottom: 20px;
+}
+
+.game-info {
+  margin-bottom: 20px;
+}
+
+.game-info p {
+  font-size: 1.2em;
+  margin: 5px 0;
+}
+
+.game-input {
+  margin-bottom: 20px;
+}
+
+.game-input input {
+  padding: 10px;
+  font-size: 1em;
+  width: 80%;
+  margin-right: 10px;
+}
+
+.game-input button {
+  padding: 10px 20px;
+  font-size: 1em;
+  cursor: pointer;
+}
+
+.keyboard {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.keyboard-row {
+  display: flex;
+  margin: 5px 0;
+}
+
+.keyboard-row button {
+  padding: 10px;
+  font-size: 1em;
+  margin: 0 2px;
+  cursor: pointer;
+}
